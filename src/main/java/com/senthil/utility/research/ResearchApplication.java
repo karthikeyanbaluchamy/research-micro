@@ -12,7 +12,7 @@ public class ResearchApplication {
 	
 	@GetMapping("/find")
 	public String dothis() {
-		return "Welcome to the world of micrservice";
+		return "Welcome to the world of OpenShift";
 	}
 
 	public static void main(String[] args) {
