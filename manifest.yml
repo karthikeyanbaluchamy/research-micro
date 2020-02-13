@@ -1,0 +1,13 @@
+applications:
+- name: research
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: target/research-0.0.1-SNAPSHOT.jar
+  timeout: 120
+  routes: 
+  - route: research-funny-tiger-wh.cfapps.io
+  - route: groupdetails.cfapps.io
+  buildpacks: 
+  - https://github.com/cloudfoundry/java-buildpack
+  stack: cflinuxfs3
